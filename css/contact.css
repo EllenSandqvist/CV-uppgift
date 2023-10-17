@@ -1,0 +1,141 @@
+.contact-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.contact-background_image {
+    background-image: url('/pictures/contact-small.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--accent-color);
+    /* flex-shrink 3 so that it shrinks faster than contact-form */
+    flex-shrink: 3;
+    flex-basis: 500px;
+    position: relative;
+    height: auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.5em 0.5em;
+    background-color: white;
+    flex-shrink: 1;
+    flex-basis: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    font-size: 1.1rem;
+}
+
+input, textarea {
+    font-size: 1rem;
+    max-width: 100%;
+    border: 1px solid var(--accent-color);
+    margin-top: 0.1em;
+}
+
+input {
+    padding: 0.2em;
+}
+
+.send-button {
+    padding: 0.5em 2em;
+    margin: 1.2em auto;
+    border: 3px solid var(--accent-color);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contact-personal_info {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 2.5em 0 0 1.8em;
+    color: #8c7981;
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    rotate: 17deg;
+}
+
+/* Is displayed shown on smaller screens */
+.contact-personal_info_hidden {
+    display: none;
+}
+
+/* ================================== 
+             START MEDIA QUERY
+=====================================*/
+
+@media (max-width: 680px) {
+    main {
+        background-image: url('/pictures/contact-small.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-section {
+        margin: 1em 0;
+        width: 96%;
+    }
+
+    .contact-background_image {
+        background: none;
+        flex-basis: 0;
+    }
+
+    .contact-form {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 20px;
+        padding: 1.5em 0em;
+    }    
+   
+    .contact-info {
+        font-size: 1.1rem;
+    }
+
+    .contact-div {
+        font-size: 1rem;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    input, textarea {
+        max-width: 90%;
+    }
+
+    /* Hidden on smaller screens */
+    .contact-personal_info {
+        display: none;
+    }
+
+    /* Shown instead of .contact-personal_info, placed below send button */
+    .contact-personal_info_hidden {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,67 @@
+.cv-heading {
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+
+.cv-row1,
+.cv-row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cv-section {
+    width: 30%;
+    min-width: 400px;
+    border: 2px solid var(--accent-color);
+    border-radius: 15px;
+    padding: 1.5em;
+    margin: 0 1em 2em 1em;
+}
+
+.education,
+.work {
+    margin-bottom: 1em;
+}
+
+.education-list {
+    padding-left: 0;
+}
+
+.language ul,
+.skills ul {
+    padding: 0;
+}
+
+/* Bullets */
+.language-skills {
+    margin-left: 2em;
+    font-size: 1.5rem;
+    text-align: right;
+    display: inline-block;
+    color: var(--accent-color);
+    -webkit-text-stroke: 1px black;
+}
+
+/* Empty bullets */
+.bullet-empty {
+    color: var(--primary-color);
+}
+
+
+/* ================================== 
+             START MEDIA QUERY
+=====================================*/
+
+@media (max-width: 680px) {
+    .cv-heading {
+        margin-bottom: 0.4em;
+    }
+   
+    .cv-section {
+        width: 95%;
+        min-width: 310px;
+        padding: 0.5em;
+        margin: 0 1em 1em 1em;
+    }
+}

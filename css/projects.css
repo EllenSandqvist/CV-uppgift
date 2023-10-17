@@ -1,0 +1,64 @@
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-section h1 {
+    text-align: center;
+}
+
+.project-text_right,
+.project-text_left {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2em auto;
+    border: 2.5px dotted var(--accent-color);
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+/* row-reverse to get pictures on the right side to be above text when wrapping */
+.project-text_left {
+    flex-direction: row-reverse;
+}
+
+.project-text {
+    max-width: 580px;
+    padding: 1em 1em;
+}
+
+.project-img {
+    border-radius: 10px;
+}
+
+
+/* ================================== 
+             START MEDIA QUERY
+=====================================*/
+
+@media (max-width: 680px) {
+    
+    .project-section h1 {
+        border-bottom: 2.5px dotted var(--accent-color);
+        padding-bottom: 0.7em;
+    }
+
+    .project-section h2 {
+        text-align: center;
+    }
+
+    /* Textdecoration in span hidden on small screens */
+    .project-section h2 span {
+        display: none;
+    }
+
+    .project-text_right,
+    .project-text_left {
+        margin: 1em auto;
+        border: none;
+        border-bottom: 2.5px dotted var(--accent-color);
+        border-radius: 0;
+    }
+}

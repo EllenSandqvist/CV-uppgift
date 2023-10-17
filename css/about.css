@@ -1,0 +1,116 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text {
+    max-width: 45%;
+    min-width: 450px;
+    padding: 2em;
+    border: 2px dotted var(--accent-color);
+    height: fit-content;
+    border-radius: 20px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.about-heading {
+    text-align: left;
+}
+
+.about-heading span {
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+.about-text p {
+    margin-top: 1.2em;
+}
+
+.branch {
+    max-width: 20%;
+    align-self: end;
+    margin: 0.5em;
+}
+
+.branch img {
+    width: 100%;
+}
+
+.earth {
+    max-width: 18%;
+    align-self: flex-start;
+    margin: 1em 3.5em 0 0.5em;
+}
+
+/* earth image with animation */
+.earth img {
+    width: 100%;
+    animation: rotate 8s linear 1; 
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+}
+
+/* branch_hidden is displayed on smaller screens */
+.branch_hidden {
+    display: none;
+}
+
+/* ================================== 
+             START MEDIA QUERY
+=====================================*/
+
+@media (max-width: 680px) {
+    .about-section {
+        justify-content: center; 
+    }
+
+    /* img hidden, branch_hidden shown instead */
+    .branch {
+        display: none;
+    }
+    
+    /* img hidden on smaller screens */
+    .earth {
+        display: none;   
+    }
+
+    .about-text {
+        max-width: 95%;
+        min-width: 0;
+        padding: 1em;
+        border: 2px dotted var(--accent-color);
+        margin: 1em 0;
+        text-align: left;
+        position: relative;
+    }
+       
+    .about-heading span {
+        font-size: 1.4rem;
+    }
+
+    /* branch img rotated and displayed in left right corner */
+    .branch_hidden {
+        display: inline-block;
+    }
+
+    .branch_hidden img {
+        transform: rotateY(180deg);
+        width: 20%;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+    }
+}

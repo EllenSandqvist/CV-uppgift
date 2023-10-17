@@ -1,0 +1,72 @@
+/* Resetting box-sizing and margin for the hole page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #F0EFE6;
+    --secondary-color: #242420;
+    --accent-color: #FFA600;
+}
+
+main {
+    background-color: var(--primary-color);
+    padding: 2.5em 0 0.75em 0;
+    min-height: 88vh;
+}
+
+p, figcaption, a, li, h3, label, button {
+    font-family: 'Abel', Verdana, sans-serif;
+}
+
+p, li, figcaption {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.list-style_none {
+    list-style: none;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h1, h2 {
+    font-family: 'Croissant One', Georgia, 'Times New Roman', serif;
+    letter-spacing: 0.1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+/* ================================== 
+             START MEDIA QUERY
+=====================================*/
+
+@media (max-width: 680px) {
+    main {
+        padding: 1em 0 0.5em 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+

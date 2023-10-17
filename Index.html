@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellen Sandqvist - Fullstack JavaScript Student med miljötänk</title>
+    <meta name="description" content="Fullstack JavaScript student med kostvetenskaplig bakgrund och passion för miljöfrågor. Utforska mina projekt och länkar till min LinkedIn och GitHub.">
+
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Cookie&family=Croissant+One&family=DM+Serif+Display&family=Montserrat&family=Montserrat+Alternates:wght@300;400&family=Noto+Sans+KR:wght@100;900&family=Open+Sans:wght@300&family=Raleway:wght@300;400&family=Roboto:wght@100&family=Space+Mono&family=Tangerine&family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Cookie&family=Croissant+One&family=DM+Serif+Display&family=Montserrat&family=Montserrat+Alternates:wght@300;400&family=Noto+Sans+KR:wght@100;900&family=Open+Sans:wght@300&family=Raleway:wght@300;400&family=Roboto:wght@100&family=Space+Mono&family=Tangerine&family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Cookie&family=Croissant+One&family=DM+Serif+Display&family=Montserrat&family=Montserrat+Alternates:wght@300;400&family=Noto+Sans+KR:wght@100;900&family=Open+Sans:wght@300&family=Raleway:wght@300;400&family=Roboto:wght@100&family=Space+Mono&family=Tangerine&family=Vidaloka&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- HEADER with navigation -->
+    <!-- Meny for desktop -->
+    <header>
+        <h3 class="header-title">Ellen Sandqvist <span>&#10086;</span></h3>
+        <nav class="main-menu">
+            <ul class="nav-list">
+                <li class="list-style_none"><a class="nav-link selected" href="Index.html">Hem</a></li>
+                <li class="list-style_none"><a class="nav-link" href="Cv.html">CV</a></li>
+                <li class="list-style_none"><a class="nav-link" href="Projects.html">Projekt</a></li> 
+                <li class="list-style_none"><a class="nav-link" href="About.html">Om mig</a></li>
+                <li class="list-style_none"><a class="nav-link" href="Contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    <!--Hamburger menu for mobil -->
+        <div class="mobil-menu">
+            <!-- Linking checkbox and icon -->
+            <input type="checkbox" id="hamburger-input">
+            <label class="hamburger-menu" for="hamburger-input">
+                <i class="hamburger-icon fa-solid fa-bars"></i>
+            </label>
+            <!-- Side menu that will be shown when icon is clicked -->
+            <nav class="sidebar-menu">
+                <!-- a X-icon to close the menu  -->
+                <a class="menu-closer" href="/"><i class="fa-solid fa-xmark"></i></a>
+                <h3>Meny</h3>
+                <ul>
+                    <li class="list-style_none"><a class="nav-link selected" href="Index.html">Hem</a></li>
+                    <li class="list-style_none"><a class="nav-link" href="Cv.html">CV</a></li>
+                    <li class="list-style_none"><a class="nav-link" href="Projects.html">Projekt</a></li> 
+                    <li class="list-style_none"><a class="nav-link" href="About.html">Om mig</a></li>
+                    <li class="list-style_none"><a class="nav-link" href="Contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECTION FOR PROFILE PICTURE & TEXT -->
+        <div class="profile-div">
+            <img class="profile-picture" src="/pictures/Ellen.PNG" alt="Black and white photo of Ellen">
+                     
+            <section class="profile-text">
+                <!-- H1 divided with span for different styling -->
+                <h1 class="profile-heading">Student Fullstackutvecklare JavaScript<br><span>Ellen Sandqvist</span></h1> 
+                <p>
+                   Ser mig själv som en plikttrogen person med förmågan att balansera kreativitet och struktur. I bagaget finns en magister i kostvetenskap och flerårig erfarenhet av administration och lönerapportering. Jag har en naturlig fallenhet för siffror och gillar problemlösning. Miljö- och samhällsfrågor ligger mig varmt om hjärtat. Läs mer om mina erfarenheter i mitt <a href="Cv.html">CV</a>.
+                </p> 
+                 
+                <!-- Interests -->
+                <h2 class="interests-heading">Saker som får mig att må bra:</h2>
+                
+                <div class="interests">
+                    <figure>
+                        <i class="fa-solid fa-tree"></i>
+                        <figcaption>Skogen</figcaption>
+                    </figure>
+                        
+                    <figure>
+                        <i class="fa-solid fa-people-roof"></i>
+                        <figcaption>Familj</figcaption> 
+                    </figure>
+
+                    <figure>
+                        <i class="fa-solid fa-seedling"></i>
+                        <figcaption>Trädgård</figcaption> 
+                    </figure>
+                    
+                    <figure>
+                        <i class="fa-solid fa-person-skiing-nordic"></i>
+                        <figcaption>Träning</figcaption> 
+                    </figure>
+
+                    <figure>
+                       <i class="fa-solid fa-utensils"></i>
+                        <figcaption>Mat & Dryck</figcaption>
+                    </figure> 
+                </div>    
+            </section>
+        </div>
+
+        <!-- ARTICLE WITH MY PROJECTS -->
+        <article class="projects">
+            <h2>Mina Projekt</h2>
+            <div class="project-div">
+                <!--Project cards divided in two divs for a nicer flex-wrap -->
+                <div class="project-card_row1">
+                    <section class="project-card">
+                            <a href="Projects.html#wooden-dreams"><img src="pictures/wooden-dreams.jpg" alt="Forest with autumn colors reflected in lake">
+                            <div class="project-text"><h3><span>&#9672;</span> Wooden Dreams <span>&#9672;</span></h3></div></a>
+                    </section>
+
+                    <section class="project-card">
+                            <a href="Projects.html#take-a-knit"><img src="pictures/take-a-knit.jpg" alt="A started knitting of a sweater">
+                            <div class="project-text"><h3><span>&#9672;</span> Take a Knit! <span>&#9672;</span></h3></div></a>
+                    </section>
+                </div>
+                <div class="project-card_row2">
+                    <section class="project-card">
+                            <a href="Projects.html#smakprovokatoren"><img src="pictures/smakprovokatoren.jpg" alt="A fork with pasta">
+                            <div class="project-text"><h3><span>&#9672;</span> SmakProvokatören <span>&#9672;</span></h3></div></a>
+                    </section>
+
+                    <section class="project-card">
+                            <a href="Projects.html#kantar-ellen"><img src="pictures/kantarellen.jpg" alt="Chantarelles on a grey table cloth">
+                            <div class="project-text"><h3><span>&#9672;</span> Kantar~Ellen <span>&#9672;</span></h3></div></a>
+                    </section>
+                </div>
+            </div>
+        </article>   
+    </main>
+
+    <!-- FOOTER with email and link to LinkedIn & GitHub -->
+    <footer>
+        <a class="mailto" href="mailto:ellensandqvist@chasacademy.se"><p>ellen.sandqvist@chasacademy.se</p></a>
+
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/ellen-sandqvist-32898b174/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/EllenSandqvist" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <!-- Script for icons -->
+    <script src="https://kit.fontawesome.com/dfb17be9bd.js" crossorigin="anonymous"></script>
+</body>
+</html>

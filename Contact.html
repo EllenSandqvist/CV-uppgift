@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Ellen Sandqvist | Fullstack JavaScript Student</title>
+    <meta name="description" content="Har du frågor eller vill diskutera projekt? Besök min webbplats för kontakt. Som blivande fullstackutvecklare i JavaScript ser jag fram emot att höra från dig.">
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Cookie&family=Croissant+One&family=DM+Serif+Display&family=Montserrat&family=Montserrat+Alternates:wght@300;400&family=Noto+Sans+KR:wght@100;900&family=Open+Sans:wght@300&family=Raleway:wght@300;400&family=Roboto:wght@100&family=Space+Mono&family=Tangerine&family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Cookie&family=Croissant+One&family=DM+Serif+Display&family=Montserrat&family=Montserrat+Alternates:wght@300;400&family=Noto+Sans+KR:wght@100;900&family=Open+Sans:wght@300&family=Raleway:wght@300;400&family=Roboto:wght@100&family=Space+Mono&family=Tangerine&family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Cookie&family=Croissant+One&family=DM+Serif+Display&family=Montserrat&family=Montserrat+Alternates:wght@300;400&family=Noto+Sans+KR:wght@100;900&family=Open+Sans:wght@300&family=Raleway:wght@300;400&family=Roboto:wght@100&family=Space+Mono&family=Tangerine&family=Vidaloka&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <!-- HEADER with navigation -->
+    <!-- Meny for desktop -->
+    <header>
+        <h3 class="header-title">Ellen Sandqvist <span>&#10086;</span></h3>
+        <nav class="main-menu">
+            <ul class="nav-list">
+                <li class="list-style_none"><a class="nav-link" href="Index.html">Hem</a></li>
+                <li class="list-style_none"><a class="nav-link" href="Cv.html">CV</a></li>
+                <li class="list-style_none"><a class="nav-link" href="Projects.html">Projekt</a></li> 
+                <li class="list-style_none"><a class="nav-link" href="About.html">Om mig</a></li>
+                <li class="list-style_none"><a class="nav-link selected" href="Contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    <!--Hamburgermenu for mobil -->
+        <div class="mobil-menu">
+            <!-- Linking checkbox and icon -->
+            <input type="checkbox" id="hamburger-input">
+            <label class="hamburger-menu" for="hamburger-input">
+                <i class="hamburger-icon fa-solid fa-bars"></i>
+            </label>
+            <!-- Side menu that will be shown when icon is clicked -->
+            <nav class="sidebar-menu">
+                <!-- a X-icon to close the menu  -->
+                <a class="menu-closer" href="Contact.html"><i class="fa-solid fa-xmark"></i></a>
+                <h3>Meny</h3>
+                <ul>
+                    <li class="list-style_none"><a class="nav-link" href="Index.html">Hem</a></li>
+                    <li class="list-style_none"><a class="nav-link" href="Cv.html">CV</a></li>
+                    <li class="list-style_none"><a class="nav-link" href="Projects.html">Projekt</a></li> 
+                    <li class="list-style_none"><a class="nav-link" href="About.html">Om mig</a></li>
+                    <li class="list-style_none"><a class="nav-link selected" href="Contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- CONTACT SECTION -->
+        <section class="contact-section">
+            <div class="contact-background_image">
+                <div class="contact-personal_info">
+                    <!-- ARIA-hidden and sr-only is used for better accessibility -->
+                    <p><i class="fa-solid fa-house" aria-hidden="true"></i><span class="sr-only">Hemadress</span> Himlastigen, Umeå</p>
+                    <p><i class="fa-solid fa-envelope" aria-hidden="true"></i><span class="sr-only">E-post</span> ellen.sandqvist@chasacademy.se</p>
+                    <p><i class="fa-solid fa-phone" aria-hidden="true"></i><span class="sr-only">Telefonnummer</span> 070-123 45 67</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h1>Kontakta mig</h1>
+                <p class="contact-info">Har du frågor? -Vad kul! <br>
+                    Välkommen att skriva ett meddelande till mig.</p>
+                <form>
+                    <div class="contact-div">
+                        <label for="firstName">Förnamn*</label>
+                        <input id="firstName" type="text" required>
+                    </div>
+            
+                    <div class="contact-div">
+                        <label for="lastName">Efternamn*</label>
+                        <input id="lastName" type="text" required>
+                    </div>
+            
+                    <div class="contact-div">
+                        <label for="email">E-post*</label>
+                        <input id="email" type="email" required>
+                    </div>
+
+                    <div class="contact-div">
+                        <label for="phone">Telefonnummer</label>
+                        <input id="phone" type="tel">
+                    </div>
+            
+                    <div class="contact-div">
+                        <label for="message">Meddelande*</label>
+                        <textarea id="message" class="contact-textarea" cols="35" rows="8" placeholder="Skriv ett meddelande till mig..." required></textarea>
+                    </div>
+            
+                    <button class="send-button">Skicka</button>
+                </form>
+                <!-- contact-personal_info_hidden is displayed on smaller -->
+                <div class="contact-personal_info_hidden">
+                    <p><i class="fa-solid fa-house"></i> Himlastigen, Umeå</p>
+                    <p><i class="fa-solid fa-envelope"></i> ellen.sandqvist@chasacademy.se</p>
+                    <p><i class="fa-solid fa-phone"></i> 070-123 45 67</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER with email and link to Linked-in & github -->
+    <footer>
+        <a class="mailto" href="mailto:ellensandqvist@chasacademy.se"><p>ellen.sandqvist@chasacademy.se</p></a>
+            <div class="footer-links">
+            <a href="https://www.linkedin.com/in/ellen-sandqvist-32898b174/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+            <a href="https://github.com/EllenSandqvist" target="_blank"><i class="fa-brands fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a>
+        </div>
+    </footer>
+    <!-- Script for icons -->
+    <script src="https://kit.fontawesome.com/dfb17be9bd.js" crossorigin="anonymous"></script>
+</body>
+</html>
