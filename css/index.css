@@ -22,7 +22,7 @@
 /* animation of picture on hover */
 .profile-picture:hover {
     border: 1px solid black;
-    animation: spin 2s infinite linear;
+    animation: spin 2s 3 linear;
 }
 
 @keyframes spin {
