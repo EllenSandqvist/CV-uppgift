@@ -90,7 +90,7 @@ input {
 
 @media (max-width: 680px) {
     main {
-        background-image: url('/pictures/contact-small.jpg');
+        background-image: url('../pictures/contact-small.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
