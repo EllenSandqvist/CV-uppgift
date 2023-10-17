@@ -9,6 +9,11 @@ header {
     min-height: 6vh;
 }
 
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
 .header-title {
     font-size: 1.23rem;
     font-family: 'Croissant One', Georgia, 'Times New Roman', serif;
