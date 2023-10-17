@@ -6,7 +6,7 @@
 }
 
 .contact-background_image {
-    background-image: url('/pictures/contact-small.jpg');
+    background-image: url('../pictures/contact-small.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--accent-color);
