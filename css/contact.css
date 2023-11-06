@@ -33,6 +33,11 @@ form {
     flex-direction: column;
 }
 
+/* Class to add on form when send button is clicked */
+.form-invisible {
+    visibility: hidden;
+} 
+
 .contact-info {
     font-size: 1.2rem;
     font-weight: bold;
