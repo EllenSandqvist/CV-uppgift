@@ -11,6 +11,8 @@ sendBtn.addEventListener('click', function(event){
     //Hide form by adding a class of form-invisible
     contactMeForm.classList.add('form-invisible');
 
+    window.scrollTo(0, 0);
+
     //Output - change the text in contactInfo to thank you- message
     contactInfo.textContent = "Tack för ditt meddelande! 😊";
     contactInfo.style.marginTop = "2em";
