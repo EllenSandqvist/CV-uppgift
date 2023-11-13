@@ -1,5 +1,5 @@
 //--------------------------------------------------------------
-//----------------My own JS code-------------------------------
+//------------My own JS code- On contact page-------------------
 //--------------------------------------------------------------
 
 //Variables outside of function
@@ -23,6 +23,7 @@ sendBtn.addEventListener('click', function(event){
     contactInfo.style.fontSize = '1.5rem';
     contactInfo.style.borderBottom = '1px solid orange';
 });
+
 
 
 
