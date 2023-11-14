@@ -91,38 +91,46 @@ async function getEducations(){
     const foodAndNutrition = document.getElementById('food-and-nutrition');
     const naturalScience = document.getElementById('natural-science');
 
+
+    const utbildningar = cvData.Utbildning;
+    console.log(utbildningar);
+    
     //forEach loop to get education data
-    cvData.Utbildning.forEach(function(educationRow){
+    utbildningar.forEach(function(utbildning){
         //Create element h3 and add text content
         const educationH3 = document.createElement('h3');
-        educationH3.textContent = educationRow.rubrik;
+        educationH3.textContent = utbildning.rubrik;
         
         //Create p with <em> and add text content
         const educationParagraph = document.createElement('p');
-        educationParagraph.textContent = educationRow.skola;
+        educationParagraph.textContent = utbildning.skola;
         educationParagraph.style.fontStyle = 'italic';
 
         //create p for the description 
         const educationDescription = document.createElement('p');
+        // educationDescription.textContent = educationRow.beskrivning;
+        
+        // if statement to check if beskrivning is an array
+        if(Array.isArray(utbildning.beskrivning)) {
 
-        //if statement to check if beskrivning is an array
-        if(Array.isArray(educationRow.beskrivning)) {
+            const descriptionList = document.createElement('ul');
+            console.log(descriptionList);
 
             //if it is an array use forEach to iterate through the array
-            educationRow.beskrivning.forEach(function(item){
+            utbildning.beskrivning.forEach(function(item){
                 
-                //for each array item check if it contains an object
-                if(typeof item === 'object'){
 
-                    //if the array contains an object use for in loop
-                    for(const property in item){
-                        educationDescription.innerHTML += `<br>${property}:<br>${item[property]}`;
-                    } 
-                }
-            })
+                //KOLLA UPP OBJECT KEYS SOM ARNAR PRATADE OM!!!
+                const descriptionItem = document.createElement('li');
+                descriptionItem.textContent = item;
+                console.log(descriptionItem); 
+            }
+            
+            )
         } else {
             // If "beskrivning" is not an array, treat it as a single string
-            educationDescription.textContent = educationRow.beskrivning;
+            educationDescription.textContent = utbildning.beskrivning;
+            
         };
         
         //APPEND-CHILDREN!!!
@@ -131,6 +139,27 @@ async function getEducations(){
     })
 
 }
+
+//For loop to go through each education
+    // for(let i = 0; i < utbildningar.length; i++){
+    //     const utbildning = utbildningar[i];
+
+    //     //Check if description is a string or an array
+    //     if(typeof utbildning.beskrivning === 'string'){
+    //         console.log("Beskrivning: ", utbildning.beskrivning);
+
+    //     //if description is an array use for loop to iterate through    
+    //     } else if (Array.isArray(utbildning.beskrivning)){
+    //         for(let j = 0; j < utbildning.beskrivning.length; j++) {
+    //             beskrivningObj = utbildning.beskrivning[j];
+    //         }
+
+          
+    //     }
+    // }
+
+
+
 
 
 //--------------------------------------------------------------
