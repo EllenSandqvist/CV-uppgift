@@ -219,20 +219,14 @@ async function getLanguages(){
         //Use switch to add "points" depending on skill level
         switch(language.kunskapsnivå){
             case 5:
-                //use span to add a html-class to the bullets
-                languageItem.innerHTML = language.språk + ": <span class='skill-bullet'>🟠🟠🟠🟠🟠</span>";
+                //use span to add a 'bullets' and their html-class
+                languageItem.innerHTML = language.språk + '<span class="language-skills"> &bull; &bull; &bull; &bull; &bull;</span>';
                 break;
             case 4: 
-                languageItem.innerHTML = language.språk + ": <span class='skill-bullet'>🟠🟠🟠🟠⚪</span>";
-                break;
-            case 3: 
-                languageItem.innerHTML = language.språk + ": <span class='skill-bullet'>🟠🟠🟠⚪⚪</span>";
-                break;
-            case 2: 
-                languageItem.innerHTML = language.språk + ": <span class='skill-bullet'>🟠🟠⚪⚪⚪</span>";
+                languageItem.innerHTML = language.språk + '<span class="language-skills"> &bull; &bull; &bull; &bull; <span class="bullet-empty">&bull;</span></span>';
                 break;
             case 1: 
-                languageItem.innerHTML = language.språk + ": <span class='skill-bullet'>🟠⚪⚪⚪⚪</span>";
+                languageItem.innerHTML = language.språk + '<span class="language-skills"> &bull;<span class="bullet-empty"> &bull; &bull; &bull; &bull;</span></span>';
                 break;
         }      
         
