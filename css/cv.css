@@ -33,21 +33,15 @@
     padding: 0;
 }
 
-/* Bullets */
-.language-skills {
+.language li {
+    margin-bottom: 0.7em;
+}
+
+.skill-bullet {
     margin-left: 2em;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: right;
-    display: inline-block;
-    color: var(--accent-color);
-    -webkit-text-stroke: 1px black;
 }
-
-/* Empty bullets */
-.bullet-empty {
-    color: var(--primary-color);
-}
-
 
 /* ================================== 
              START MEDIA QUERY
