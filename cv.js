@@ -28,6 +28,7 @@ let cvData;
             //call other functions
             getHeaders();
             getEducations();
+            getWorkExperience();
 
         } else {
             console.log("HTTP-erros: " + response.status);
@@ -165,6 +166,32 @@ async function getEducations(){
 //--------------------------------------------------------------
 // Add work experience
 //--------------------------------------------------------------
+async function getWorkExperience(){
+    //Variables for needed html elements
+    const workSection = document.getElementById('work-section');
+    const arbetslivsErfarenhet = cvData.Arbetslivserfarenhet;
+    
+    arbetslivsErfarenhet.forEach(function(arbete){
+        //Create element h3, add text content and append
+        const workH3 = document.createElement('h3');
+        workH3.textContent = arbete.titel;
+        workSection.appendChild(workH3);
+        
+        //Create p with <em> and add text content
+        const workParagraph = document.createElement('p');
+        workParagraph.textContent = arbete.företag;
+        workParagraph.style.fontStyle = 'italic';
+        workSection.appendChild(workParagraph);
+
+        //create p for the description 
+        const workDescription = document.createElement('p');
+        workDescription.textContent = arbete.arbetsuppgifter;
+        workDescription.classList.add('work');
+        workSection.appendChild(workDescription);
+    })
+}
+
+
 
 //--------------------------------------------------------------
 // Add languages
