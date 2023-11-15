@@ -37,7 +37,7 @@ let cvData;
         }
     }
 
-//Call main function
+//******* Call main function *********
 getCvData();
 
 
@@ -90,16 +90,14 @@ async function getHeaders(){
 async function getEducations(){
 
     //Variables for needed html elements
-    const fullstackJavaScript = document.getElementById('fullstack-javascript');
-    const foodAndNutrition = document.getElementById('food-and-nutrition');
-    const naturalScience = document.getElementById('natural-science');
-
-
+    const educationSection = document.getElementById('education-section');
+    
+    //variable for relevant part of json 
     const utbildningar = cvData.Utbildning;
-    console.log(utbildningar);
     
     //forEach loop to get education data
     utbildningar.forEach(function(utbildning){
+
         //Create element h3 and add text content
         const educationH3 = document.createElement('h3');
         educationH3.textContent = utbildning.rubrik;
@@ -109,60 +107,46 @@ async function getEducations(){
         educationParagraph.textContent = utbildning.skola;
         educationParagraph.style.fontStyle = 'italic';
 
-        //create p for the description 
-        const educationDescription = document.createElement('p');
-        // educationDescription.textContent = educationRow.beskrivning;
-        
-        // if statement to check if beskrivning is an array
-        if(Array.isArray(utbildning.beskrivning)) {
+        //create divs that will contain each education description
+        const educationDescriptionDiv = document.createElement('div');
+        educationDescriptionDiv.classList.add('education');
 
-            const descriptionList = document.createElement('ul');
-            console.log(descriptionList);
-
-            //if it is an array use forEach to iterate through the array
-            utbildning.beskrivning.forEach(function(item){
-                
-
-                //KOLLA UPP OBJECT KEYS SOM ARNAR PRATADE OM!!!
-                const descriptionItem = document.createElement('li');
-                descriptionItem.textContent = item;
-                console.log(descriptionItem); 
-            }
-            
-            )
-        } else {
-            // If "beskrivning" is not an array, treat it as a single string
+        //if statement to check if description is a string or an array
+        if(typeof utbildning.beskrivning === 'string') {
+            const educationDescription = document.createElement('p');
             educationDescription.textContent = utbildning.beskrivning;
-            
-        };
+            educationDescriptionDiv.appendChild(educationDescription);
+        } 
+        //If description is an array
+        else if(Array.isArray(utbildning.beskrivning)){
+            const descriptionList = document.createElement('ul');
+            descriptionList.classList.add('education-list');
+
+            utbildning.beskrivning.forEach(function(subDescription) {
+                Object.keys(subDescription).forEach(function(property){
+                    
+                    const descriptionListH4 = document.createElement('h4');
+                    descriptionListH4.textContent = property + ": ";
+                    descriptionListH4.classList.add('cv-h4');
+                    descriptionList.appendChild(descriptionListH4);
+                    
+                    const descriptionListItem = document.createElement('li');
+                    descriptionListItem.textContent = subDescription[property];
+                    descriptionListItem.classList.add('list-style_none')
+                    descriptionList.appendChild(descriptionListItem);
+
+                    console.log(descriptionList);
+                });
+            });
+            educationDescriptionDiv.appendChild(descriptionList);
+        }
         
-        //APPEND-CHILDREN!!!
-
-        console.log(educationH3, educationParagraph, educationDescription);
-    })
-
+        //Append the different education parts
+        educationSection.appendChild(educationH3);
+        educationSection.appendChild(educationParagraph);
+        educationSection.appendChild(educationDescriptionDiv);
+    });
 }
-
-//For loop to go through each education
-    // for(let i = 0; i < utbildningar.length; i++){
-    //     const utbildning = utbildningar[i];
-
-    //     //Check if description is a string or an array
-    //     if(typeof utbildning.beskrivning === 'string'){
-    //         console.log("Beskrivning: ", utbildning.beskrivning);
-
-    //     //if description is an array use for loop to iterate through    
-    //     } else if (Array.isArray(utbildning.beskrivning)){
-    //         for(let j = 0; j < utbildning.beskrivning.length; j++) {
-    //             beskrivningObj = utbildning.beskrivning[j];
-    //         }
-
-          
-    //     }
-    // }
-
-
-
 
 
 //--------------------------------------------------------------
@@ -196,7 +180,6 @@ async function getWorkExperience(){
 }
 
 
-//************LEFT TO DO: ADD BULLETS WITH SWITCH(KUNSKAPSNIVÅ)********/
 //--------------------------------------------------------------
 // Add languages
 //--------------------------------------------------------------
