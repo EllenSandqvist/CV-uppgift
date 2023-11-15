@@ -29,6 +29,8 @@ let cvData;
             getHeaders();
             getEducations();
             getWorkExperience();
+            getSkills();
+            getLanguages();
 
         } else {
             console.log("HTTP-erros: " + response.status);
@@ -169,6 +171,8 @@ async function getEducations(){
 async function getWorkExperience(){
     //Variables for needed html elements
     const workSection = document.getElementById('work-section');
+
+    //choosing relevant part from json and saving it in a variable
     const arbetslivsErfarenhet = cvData.Arbetslivserfarenhet;
     
     arbetslivsErfarenhet.forEach(function(arbete){
@@ -188,15 +192,66 @@ async function getWorkExperience(){
         workDescription.textContent = arbete.arbetsuppgifter;
         workDescription.classList.add('work');
         workSection.appendChild(workDescription);
-    })
+    });
 }
 
 
-
+//************LEFT TO DO: ADD BULLETS WITH SWITCH(KUNSKAPSNIVÅ)********/
 //--------------------------------------------------------------
 // Add languages
 //--------------------------------------------------------------
+async function getLanguages(){
+    //Variables for needed html elements
+    const languageSection = document.querySelector('.language');
+    
+    //choosing relevant part from json and saving it in a variable
+    const languages = cvData.Språk;
+    console.log(languages);
+
+    //create ul for list of languages
+    const languageList = document.createElement('ul');
+    
+    languages.forEach(function(language){
+        //create a li for every language
+        const languageItem = document.createElement('li');
+        
+        //add language and class to each li
+        languageItem.textContent = language.språk + ": " + language.kunskapsnivå;
+        languageItem.classList.add('list-style_none');
+        
+        //append li to ul
+        languageList.appendChild(languageItem);
+    })
+    //append ul to language section
+    languageSection.appendChild(languageList);
+}
+
 
 //--------------------------------------------------------------
 // Add skills
 //--------------------------------------------------------------
+async function getSkills(){
+    //Variables for needed html elements
+    const skillsSection = document.querySelector('.skills');
+    
+    //choosing relevant part from json and saving it in a variable
+    const skills = cvData.Styrkor;
+
+    //create ul for list of skills
+    const skillsList = document.createElement('ul');
+    
+    skills.forEach(function(skill){
+        //create a li for every skill
+        const skillItem = document.createElement('li');
+        
+        //add skill content and class to each li
+        skillItem.textContent = skill;
+        skillItem.classList.add('list-style_none');
+        
+        //append li to ul
+        skillsList.appendChild(skillItem);
+    });
+    //append ul to skills section
+    skillsSection.appendChild(skillsList);
+}
+
