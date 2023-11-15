@@ -212,16 +212,33 @@ async function getLanguages(){
     const languageList = document.createElement('ul');
     
     languages.forEach(function(language){
-        //create a li for every language
+        //create a li for every language and add a html-class
         const languageItem = document.createElement('li');
-        
-        //add language and class to each li
-        languageItem.textContent = language.språk + ": " + language.kunskapsnivå;
         languageItem.classList.add('list-style_none');
+        
+        //Use switch to add "points" depending on skill level
+        switch(language.kunskapsnivå){
+            case 5:
+                //use span to add a html-class to the bullets
+                languageItem.innerHTML = language.språk + ": <span class='skill-bullet'>🟠🟠🟠🟠🟠</span>";
+                break;
+            case 4: 
+                languageItem.innerHTML = language.språk + ": <span class='skill-bullet'>🟠🟠🟠🟠⚪</span>";
+                break;
+            case 3: 
+                languageItem.innerHTML = language.språk + ": <span class='skill-bullet'>🟠🟠🟠⚪⚪</span>";
+                break;
+            case 2: 
+                languageItem.innerHTML = language.språk + ": <span class='skill-bullet'>🟠🟠⚪⚪⚪</span>";
+                break;
+            case 1: 
+                languageItem.innerHTML = language.språk + ": <span class='skill-bullet'>🟠⚪⚪⚪⚪</span>";
+                break;
+        }      
         
         //append li to ul
         languageList.appendChild(languageItem);
-    })
+    });
     //append ul to language section
     languageSection.appendChild(languageList);
 }
