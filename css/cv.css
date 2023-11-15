@@ -37,10 +37,19 @@
     margin-bottom: 0.7em;
 }
 
-.skill-bullet {
+/* Bullets */
+.language-skills {
     margin-left: 2em;
-    font-size: 1rem;
+    font-size: 1.8rem;
     text-align: right;
+    display: inline-block;
+    color: var(--accent-color);
+    -webkit-text-stroke: 1px black;
+}
+
+/* Empty bullets */
+.bullet-empty {
+    color: var(--primary-color);
 }
 
 /* ================================== 
