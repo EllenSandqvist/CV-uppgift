@@ -155,6 +155,12 @@
     padding: 0.4em;
     text-align: center;
     color: black;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
+.guess-number-img {
+    filter: sepia(30%) grayscale(50%);
 }
 
 /* ================================== 
