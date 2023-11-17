@@ -45,6 +45,8 @@ typingEffect(190);
 
 //Variables outside of function
 const sendBtn = document.querySelector(".send-button");
+const modal = document.getElementById('required-modal');
+const modalContent = document.querySelector('.modal-content');
 
 //Add eventlistener to button
 sendBtn.addEventListener('click', function(event){
@@ -56,8 +58,7 @@ sendBtn.addEventListener('click', function(event){
 
     //if statement to check if all required input fields are filled in
     if(contactMeForm.checkValidity()) {
-        console.log("formuläret är ok");
-
+        
         const contactInfo = document.querySelector('.contact-info');
       
         //Hide form by adding a class of form-invisible
@@ -71,8 +72,11 @@ sendBtn.addEventListener('click', function(event){
         contactInfo.style.fontSize = '1.5rem';
         contactInfo.style.borderBottom = '1px solid orange';
     } else {
-        // if any required field is missed alert user 
-        alert("Vänligen fyll i alla obligatoriska fält");
-    }
-    
+        modal.classList.remove('modal-hidden');
+    }  
 });
+
+//Eventlistener on modalContent with close function (closing x will be to small on mobile)
+modalContent.addEventListener('click', function(){
+    modal.classList.add('modal-hidden');
+})
