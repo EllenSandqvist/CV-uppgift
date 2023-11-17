@@ -33,7 +33,7 @@ sendBtn.addEventListener('click', function(event){
 const contactHeading = document.getElementById('contact-heading');
 
 //function for printing letter by letter
-function typingEffect(element, speed){
+function typingEffect(speed){
 
     //save textcontent of contactHeading to text
     const text = contactHeading.innerHTML;
@@ -41,17 +41,20 @@ function typingEffect(element, speed){
     //clear contactHeading from textcontent
     contactHeading.innerHTML="";
     
-    //index for the letters in text
+    //index used for the letters in text
     let i = 0;
 
+    //setInterval will run with the speed of "speed" until all letters in text is typed. 
     let timer = setInterval(function(){
         if(i < text.length){
             contactHeading.append(text.charAt(i));
             i++;
         } 
+        // When all letters are typed clearInterval will run
         else {
             clearInterval(timer);
 
+            //setTimeout is used so that the cursor animation and visibility continues for 3s after all the whole text is printed.  
             setTimeout(function() {
                 contactHeading.classList.remove('typing');
                 contactHeading.style.border = "none";
@@ -61,5 +64,5 @@ function typingEffect(element, speed){
 }
 
 //call function
-typingEffect(contactHeading, 190);
+typingEffect(190);
 
