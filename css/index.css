@@ -97,7 +97,7 @@
 
 .projects {
     border: 3px double var(--secondary-color);
-    width: 97%;
+    width: 93%;
     max-width: 1300px;
     margin: 4em auto 1.5em auto;
 }
@@ -123,7 +123,6 @@
     display: flex;
     align-items: end;
     justify-content: center;
-    /* ADD FLEX WRAP */
 }
 
 .project-card {
@@ -133,6 +132,7 @@
     border: 4px solid var(--accent-color);
     border-radius: 6px;
     margin: 1em;
+    cursor: pointer;
 
 /******************************************************/
 /*---- EXTERNAL CODE from CodePel: -------------------*/
@@ -154,6 +154,15 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    text-align: center;
+}
+
+.tile_face h3 {
+    margin-top: 10%;
+}
+
+.tile_face p {
+    padding: 2%;
 }
 
 .tile_face-back {
@@ -178,7 +187,7 @@
     /* position: absolute is used to position the text on the img */
     position: absolute;
     /* top and left is used to position the text away for top and left */
-    top: 90%;
+    top: 83%;
     left: 50%;
     width: 100%;
     /* without transform:translate upper left corner will be in the middle */
@@ -199,7 +208,7 @@
 }
 
 /* ================================== 
-             START MEDIA QUERY
+        START MEDIA QUERY 1
 =====================================*/
 
 /* -----@PROFILE SECTION------- */
@@ -257,7 +266,7 @@
     }
 
     .projects h2 {
-        margin-top: 0.5em;
+        margin-top: 1em;
         font-size: 1.5rem;
         letter-spacing: 0.1rem;
         word-spacing: 0.2rem;
@@ -272,3 +281,20 @@
         display: none;
     }
 }
+
+/* ================================== 
+        START MEDIA QUERY 2
+=====================================*/
+
+/* -----@PROJECT SECTION------- */
+@media (max-width: 560px){
+    .project-card_row1, 
+    .project-card_row2 {
+        flex-wrap: wrap;
+    }
+
+    .project-card {
+        margin: 1em;
+    }
+}
+
