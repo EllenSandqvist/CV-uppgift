@@ -38,6 +38,30 @@ form {
     visibility: hidden;
 } 
 
+/*****************************************************************/
+/*---- EXTERNAL CODE from CodePen AzizBooker: -------------------*/
+/*****************************************************************/
+
+/* Code for 'typewriter-cursor' */
+#contact-heading {
+    letter-spacing: 0.15rem;
+    border-right: 0.1em solid #000;
+}
+
+.typing {
+    animation: blink 0.5s step-end infinite alternate;
+}
+
+/* The blinking type writer cursor effect */
+@keyframes blink {
+    50% {border-color: transparent;}
+}
+
+/*****************************************************************/
+/*---------------------------------------------------------------*/
+/*****************************************************************/
+
+
 .contact-info {
     font-size: 1.2rem;
     font-weight: bold;
