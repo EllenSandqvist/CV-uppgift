@@ -112,24 +112,51 @@
                 <!--Project cards divided in two divs for a nicer flex-wrap -->
                 <div class="project-card_row1">
                     <section class="project-card">
-                        <a href="https://ellensandqvist.github.io/Gissa-Talet/" target="_blank"><img src="./pictures/gissa-talet.jpg" alt="Number guessing game" class="guess-number-img">
-                        <div class="project-text"><h3><span>&#9672;</span> Gissa Talet <span>&#9672;</span></h3></div></a>
+                        <!-- EXTERNAL CODE from CodePel: new div added ".tile_face tile_face-front" for flipping cards (repeated on all project-cards)-->
+                        <div class="tile_face tile_face-front">
+                            <img src="./pictures/gissa-talet.jpg" alt="Number guessing game" class="guess-number-img">
+                            <div class="project-text"><h3><span>&#9672;</span> Gissa Talet <span>&#9672;</span></h3></div>
+                        </div>
+                        <!-- EXTERNAL CODE from CodePel: a "backside" of the project-card is added (repeated on all project-cards)-->
+                        <div class="tile_face tile_face-back">
+                            <p>clicked! Test för att se om det fungerar.</p>
+                            <a href="https://ellensandqvist.github.io/Gissa-Talet/" target="_blank">Länk</a>
+                        </div>
                     </section>
-
+                    
                     <section class="project-card">
-                        <a href="projects.html#wooden-dreams"><img src="./pictures/wooden-dreams.jpg" alt="Forest with autumn colors reflected in lake">
-                        <div class="project-text"><h3><span>&#9672;</span> Wooden Dreams <span>&#9672;</span></h3></div></a>   
+                        <div class="tile_face tile_face-front">
+                            <img src="./pictures/wooden-dreams.jpg" alt="Forest with autumn colors reflected in lake">
+                            <div class="project-text"><h3><span>&#9672;</span> Wooden Dreams <span>&#9672;</span></h3></div>   
+                        </div>
+                        <div class="tile_face tile_face-back">
+                            <a href="projects.html#wooden-dreams">Länk</a>
+                            Baksidan
+                        </div>
                     </section>
                 </div>
+
                 <div class="project-card_row2">
                     <section class="project-card">
-                        <a href="projects.html#take-a-knit"><img src="./pictures/take-a-knit.jpg" alt="A started knitting of a sweater">
-                        <div class="project-text"><h3><span>&#9672;</span> Take a Knit! <span>&#9672;</span></h3></div></a>
+                        <div class="tile_face tile_face-front">
+                            <img src="./pictures/take-a-knit.jpg" alt="A started knitting of a sweater">
+                            <div class="project-text"><h3><span>&#9672;</span> Take a Knit! <span>&#9672;</span></h3></div>
+                        </div>
+                        <div class="tile_face tile_face-back">
+                            <a href="projects.html#take-a-knit">Länk</a>
+                            Baksidan
+                        </div>
                     </section>
 
                     <section class="project-card">
-                        <a href="projects.html#smakprovokatoren"><img src="./pictures/smakprovokatoren.jpg" alt="A fork with pasta">
-                        <div class="project-text"><h3><span>&#9672;</span> SmakProvokatören <span>&#9672;</span></h3></div></a>
+                        <div class="tile_face tile_face-front">
+                            <img src="./pictures/smakprovokatoren.jpg" alt="A fork with pasta">
+                            <div class="project-text"><h3><span>&#9672;</span> SmakProvokatören <span>&#9672;</span></h3></div>
+                        </div>
+                        <div class="tile_face tile_face-back">
+                            <a href="projects.html#smakprovokatoren">Länk</a>
+                            Baksidan
+                        </div>
                     </section>
                 </div>
             </div>
@@ -147,5 +174,8 @@
     </footer>
     <!-- Script for icons -->
     <script src="https://kit.fontawesome.com/dfb17be9bd.js" crossorigin="anonymous"></script>
+    
+    <!-- Script for js code -->
+    <script src="index.js"></script>
 </body>
 </html>
