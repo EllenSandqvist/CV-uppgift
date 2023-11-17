@@ -258,11 +258,12 @@
     /* -----@PROJECT SECTION------- */
     .projects {
         margin: 1.5em auto 0.5em auto;
+        width: 97%;
     }
 
     .project-card {
         border: 3px solid var(--accent-color);
-        margin: 0.2em;
+        margin: 1em 0.2em;
     }
 
     .projects h2 {
@@ -288,6 +289,12 @@
 
 /* -----@PROJECT SECTION------- */
 @media (max-width: 560px){
+
+    .projects {
+        margin: 1.5em auto 0.5em auto;
+        width: 90%;
+    }
+
     .project-card_row1, 
     .project-card_row2 {
         flex-wrap: wrap;
