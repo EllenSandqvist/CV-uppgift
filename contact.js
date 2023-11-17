@@ -25,5 +25,41 @@ sendBtn.addEventListener('click', function(event){
 });
 
 
+/*****************************************************************/
+/*---- EXTERNAL CODE from CodePen AzizBooker: -------------------*/
+/*****************************************************************/
 
+//Variables for needed html elements
+const contactHeading = document.getElementById('contact-heading');
+
+//function for printing letter by letter
+function typingEffect(element, speed){
+
+    //save textcontent of contactHeading to text
+    const text = contactHeading.innerHTML;
+
+    //clear contactHeading from textcontent
+    contactHeading.innerHTML="";
+    
+    //index for the letters in text
+    let i = 0;
+
+    let timer = setInterval(function(){
+        if(i < text.length){
+            contactHeading.append(text.charAt(i));
+            i++;
+        } 
+        else {
+            clearInterval(timer);
+
+            setTimeout(function() {
+                contactHeading.classList.remove('typing');
+                contactHeading.style.border = "none";
+            }, 3000);
+        }
+    }, speed);
+}
+
+//call function
+typingEffect(contactHeading, 190);
 
