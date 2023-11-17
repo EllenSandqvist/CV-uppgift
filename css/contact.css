@@ -128,13 +128,15 @@ input {
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 2em;
+    background-color: white;
+    margin: 30vh auto;
+    padding: 3em;
     border: 3px solid var(--accent-color);
-    width: 50%;
+    max-width: 500px;
+    width: 70%;
     position: relative;
     text-align: center;
+    box-shadow: 0 8px 10px rgba(255, 223, 0, 0.7);
 }
 
 .close {
