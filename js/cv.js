@@ -23,7 +23,6 @@ let cvData;
             
             //convert response to js
             cvData = await response.json();
-            console.log(cvData);
 
             //call other functions
             getHeaders();
@@ -58,11 +57,10 @@ async function getHeaders(){
         
         //add text to the created h2:s
         sectionHeading.textContent = `${property}`;
-        console.log(sectionHeading);
 
          //Use a switch to add right header to right section
         switch(property) {
-        //if property is education add h2 to educationSection
+        //if property is Utbildning add h2 to educationSection
             case 'Utbildning':
                 educationSection.appendChild(sectionHeading);
                 break;
@@ -134,8 +132,6 @@ async function getEducations(){
                     descriptionListItem.textContent = subDescription[property];
                     descriptionListItem.classList.add('list-style_none')
                     descriptionList.appendChild(descriptionListItem);
-
-                    console.log(descriptionList);
                 });
             });
             educationDescriptionDiv.appendChild(descriptionList);
@@ -189,7 +185,6 @@ async function getLanguages(){
     
     //choosing relevant part from json and saving it in a variable
     const languages = cvData.Språk;
-    console.log(languages);
 
     //create ul for list of languages
     const languageList = document.createElement('ul');

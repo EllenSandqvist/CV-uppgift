@@ -59,11 +59,13 @@ sendBtn.addEventListener('click', function(event){
     //if statement to check if all required input fields are filled in
     if(contactMeForm.checkValidity()) {
         
+        //The contact-info text will be replaced after message is sent
         const contactInfo = document.querySelector('.contact-info');
       
         //Hide form by adding a class of form-invisible
         contactMeForm.classList.add('form-invisible');
 
+        //Scrolls to the top of the page so that the thank you message is visible
         window.scrollTo(0, 0);
 
         //Output - change the text in contactInfo to thank you- message
@@ -72,6 +74,7 @@ sendBtn.addEventListener('click', function(event){
         contactInfo.style.fontSize = '1.5rem';
         contactInfo.style.borderBottom = '1px solid orange';
     } else {
+        //if required fields in form is not filled properly the modal is shown
         modal.classList.remove('modal-hidden');
     }  
 });
