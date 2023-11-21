@@ -2,13 +2,10 @@
 
 //returns a nodelist
 const projectCards = document.querySelectorAll('.project-card');
-console.log(projectCards);
 
 //add eventListener for each projectCard using forEach
 projectCards.forEach(function(projectCard){
     projectCard.addEventListener('click', function(){
         projectCard.classList.toggle("is-flipped");
-        console.log(projectCard);
-        console.log('test!');
     });
 })
