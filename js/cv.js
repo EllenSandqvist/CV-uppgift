@@ -16,7 +16,7 @@ let cvData;
 
     //Async function to get the data from cv.json
     async function getCvData (){
-        let response = await fetch('cv.json');
+        let response = await fetch('../cv.json');
 
         //if else to check response and handle error
         if(response.ok){
