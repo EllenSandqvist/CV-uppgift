@@ -8,7 +8,7 @@ Detta projekt innehåller en webbsida som fungerar som mitt CV. Där finns info 
 
 [Ellen's CV - Se här](https://ellensandqvist.github.io/CV-uppgift/index.html)
 
-## Funktioner
+## Innehåll
 
 - **Presentation:** En kort presentation av mig själv.
 - **CV:** En översikt över mina utbildningar och min arbetslivserfarenhet.
