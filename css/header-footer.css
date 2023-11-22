@@ -70,7 +70,9 @@ footer {
 }
 
 .footer-links {
-    font-size: 1.4rem;
+    display: flex;
+    font-size: 1.5rem;
+    gap: 0.7em;
 }
 
 .footer-links > a {
