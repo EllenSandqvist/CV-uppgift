@@ -68,6 +68,12 @@ form {
     text-align: center;
 }
 
+.message {
+    margin-top: 2em;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--accent-color);
+}
+
 .contact-div {
     display: flex;
     flex-direction: column;

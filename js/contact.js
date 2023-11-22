@@ -70,9 +70,7 @@ sendBtn.addEventListener('click', function(event){
 
         //Output - change the text in contactInfo to thank you- message
         contactInfo.textContent = "Tack för ditt meddelande! 😊";
-        contactInfo.style.marginTop = "2em";
-        contactInfo.style.fontSize = '1.5rem';
-        contactInfo.style.borderBottom = '1px solid orange';
+        contactInfo.classList.add('message');
     } else {
         //if required fields in form is not filled properly the modal is shown
         modal.classList.remove('modal-hidden');
