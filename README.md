@@ -6,7 +6,7 @@ Detta projekt innehåller en webbsida som fungerar som mitt CV. Där finns info 
 
 ## Webbplats
 
-[Ellen's CV - Se här](https://ellensandqvist.github.io/cv/index.html)
+[Ellen's CV - Se här](https://ellen-sandqvist.netlify.app/)
 
 ## Innehåll
 
