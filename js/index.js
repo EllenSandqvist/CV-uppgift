@@ -20,8 +20,7 @@ projectCards.forEach(function(projectCard){
     projectCard.addEventListener('click', function(event){
         gtag('event', 'projectCard_click', {
             'event-category': 'view_projectCard',
-            'event_card': event.target.alt,
-            'event_heading': event.target.h3
+            'event_card': event.target.id,
         });
     })
 })
