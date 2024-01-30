@@ -19,7 +19,6 @@ projectCards.forEach(function(projectCard){
 projectCards.forEach(function(projectCard){
     projectCard.addEventListener('click', function(event){
         gtag('event', 'projectCard_click', {
-            'debug_mode': true,
             'event-category': 'view_projectCard',
             'event_card': event.target.alt,
             'event_id': event.target.id
