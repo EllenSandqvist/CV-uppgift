@@ -9,6 +9,16 @@
     gtag('js', new Date());
 
     gtag('config', 'G-2NK8X30TT8');
+
+    // track click on project cards
+    projectCards.forEach(function(projectCard){
+        projectCard.addEventListener('click', function(event){
+            gtag('event', 'projectCard_click', {
+                'event-category': 'view_projectCard',
+                'event_card': event.target.alt
+            });
+        });
+    });
     </script>
     
     <meta charset="UTF-8">
