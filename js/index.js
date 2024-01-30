@@ -15,12 +15,12 @@ projectCards.forEach(function(projectCard){
     });
 })
 
-//track click on project cards
+// track click on project cards
 projectCards.forEach(function(projectCard){
     projectCard.addEventListener('click', function(event){
         gtag('event', 'projectCard_click', {
             'event-category': 'view_projectCard',
-            'event_card': event.target
+            'event_card': event.target.alt
         });
     })
 })
