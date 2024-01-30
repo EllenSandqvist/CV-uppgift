@@ -14,3 +14,13 @@ projectCards.forEach(function(projectCard){
         projectCard.classList.toggle("is-flipped");
     });
 })
+
+//track click on project cards
+projectCards.forEach(function(projectCard){
+    projectCard.addEventListener('click', function(event){
+        gtag('event', 'projectCard_click', {
+            'event-category': 'view_projectCard',
+            'event_card': event.target
+        });
+    })
+})
