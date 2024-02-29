@@ -26,11 +26,22 @@
 
 .project-text {
     max-width: 580px;
-    padding: 1em 1em;
+    padding: 1em;
 }
 
 .project-img {
     border-radius: 10px;
+}
+
+.mortage-img {
+    max-width: 365px;
+    height: 100%;
+    margin-right: 1em;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.mortage-text {
+    max-width: 480px;
 }
 
 
