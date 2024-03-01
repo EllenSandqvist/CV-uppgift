@@ -15,8 +15,9 @@
     flex-wrap: wrap;
     margin: 2em auto;
     border: 2.5px dotted var(--accent-color);
-    padding: 0.5em;
+    padding: 0.8em;
     border-radius: 10px;
+    gap: 1em;
 }
 
 /* row-reverse to get pictures on the right side to be above text when wrapping */
@@ -33,15 +34,27 @@
     border-radius: 10px;
 }
 
-.mortage-img {
+.project-section ul {
+    margin-bottom: 2em;
+}
+
+.mortage-img, .dashboard-img {
     max-width: 365px;
     height: 100%;
-    margin-right: 1em;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.mortage-text {
+.mortage-text, .dashboard-text {
     max-width: 480px;
+}
+
+
+
+.mortage-link, .dashboard-link {
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: underline black 1px;
+    text-underline-offset: 0.1em;
 }
 
 
