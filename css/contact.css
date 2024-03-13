@@ -3,6 +3,7 @@
     justify-content: center;
     margin-top: 3em;
     margin-bottom: 3em;
+    height: 60vh;
 }
 
 .contact-background_image {
@@ -21,17 +22,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     padding: 1.5em 0.5em;
     background-color: white;
     flex-shrink: 1;
     flex-basis: 500px;
 }
 
-form {
+/* form {
     display: flex;
     flex-direction: column;
-}
+} */
 
 /* Class to add on form when send button is clicked */
 .form-invisible {
@@ -46,6 +47,7 @@ form {
 #contact-heading {
     letter-spacing: 0.15rem;
     border-right: 0.1em solid #000;
+    margin-top: 1em;
 }
 
 .typing {
@@ -63,6 +65,7 @@ form {
 
 
 .contact-info {
+    margin: 1em 0 2em;
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
@@ -102,7 +105,20 @@ input {
     letter-spacing: 1px;
 }
 
-.contact-personal_info {
+.contact-personal {
+    color: #8c7981;
+    font-weight: bold;
+    padding: 2em;
+    border-radius: 10px;
+    border: 1px solid var(--accent-color);
+}
+
+.contact-personal p {
+    font-size: 1.3rem;
+}
+
+
+/* .contact-personal_info {
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -112,7 +128,7 @@ input {
     top: 0;
     font-weight: bold;
     rotate: 17deg;
-}
+} */
 
 /* Is displayed shown on smaller screens */
 .contact-personal_info_hidden {
@@ -211,7 +227,11 @@ input {
     }
 
     /* Hidden on smaller screens */
-    .contact-personal_info {
+    /* .contact-personal_info {
+        display: none;
+    } */
+
+    .contact-personal {
         display: none;
     }
 

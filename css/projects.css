@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 2em auto;
+    margin: 2em 0.5em;
     border: 2.5px dotted var(--accent-color);
     padding: 0.8em;
     border-radius: 10px;
@@ -48,8 +48,6 @@
     max-width: 480px;
 }
 
-
-
 .mortage-link, .dashboard-link {
     font-size: 1.3rem;
     color: black;
@@ -67,6 +65,7 @@
     .project-section h1 {
         border-bottom: 2.5px dotted var(--accent-color);
         padding-bottom: 0.7em;
+        font-size: 1.8rem;
     }
 
     .project-section h2 {
@@ -78,11 +77,32 @@
         display: none;
     }
 
+    .project-section ul {
+        padding: 0 1.2em;
+    }
+
+    .project-section li, .project-section p {
+        font-size: 1.1rem;
+    }
+
+    .project-img {
+        scale: 0.8;
+    }
+
+    .project-text {
+        padding: 0.2em;
+    }
+
     .project-text_right,
     .project-text_left {
         margin: 1em auto;
         border: none;
         border-bottom: 2.5px dotted var(--accent-color);
         border-radius: 0;
+        padding: 0.2em;
+    }
+
+    .mortage-link, .dashboard-link {
+        font-size: 1.1rem;
     }
 }
