@@ -1,193 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NK8X30TT8"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2NK8X30TT8"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-2NK8X30TT8', {
-        'debug_mode': true,
-    });
+      gtag("config", "G-2NK8X30TT8", {
+        debug_mode: true,
+      });
     </script>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ellen Sandqvist - Fullstack JavaScript Student med miljötänk</title>
-    <meta name="description" content="Fullstack JavaScript student med kostvetenskaplig bakgrund och passion för miljöfrågor. Utforska mina projekt och länkar till min LinkedIn och GitHub.">
+    <meta
+      name="description"
+      content="Fullstack JavaScript student med kostvetenskaplig bakgrund och passion för miljöfrågor. Utforska mina projekt och länkar till min LinkedIn och GitHub."
+    />
 
     <!-- Font links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Cookie&family=Croissant+One&family=DM+Serif+Display&family=Montserrat&family=Montserrat+Alternates:wght@300;400&family=Noto+Sans+KR:wght@100;900&family=Open+Sans:wght@300&family=Raleway:wght@300;400&family=Roboto:wght@100&family=Space+Mono&family=Tangerine&family=Vidaloka&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Cookie&family=Croissant+One&family=DM+Serif+Display&family=Montserrat&family=Montserrat+Alternates:wght@300;400&family=Noto+Sans+KR:wght@100;900&family=Open+Sans:wght@300&family=Raleway:wght@300;400&family=Roboto:wght@100&family=Space+Mono&family=Tangerine&family=Vidaloka&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Cookie&family=Croissant+One&family=DM+Serif+Display&family=Montserrat&family=Montserrat+Alternates:wght@300;400&family=Noto+Sans+KR:wght@100;900&family=Open+Sans:wght@300&family=Raleway:wght@300;400&family=Roboto:wght@100&family=Space+Mono&family=Tangerine&family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Cookie&family=Croissant+One&family=DM+Serif+Display&family=Montserrat&family=Montserrat+Alternates:wght@300;400&family=Noto+Sans+KR:wght@100;900&family=Open+Sans:wght@300&family=Raleway:wght@300;400&family=Roboto:wght@100&family=Space+Mono&family=Tangerine&family=Vidaloka&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Cookie&family=Croissant+One&family=DM+Serif+Display&family=Montserrat&family=Montserrat+Alternates:wght@300;400&family=Noto+Sans+KR:wght@100;900&family=Open+Sans:wght@300&family=Raleway:wght@300;400&family=Roboto:wght@100&family=Space+Mono&family=Tangerine&family=Vidaloka&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Cookie&family=Croissant+One&family=DM+Serif+Display&family=Montserrat&family=Montserrat+Alternates:wght@300;400&family=Noto+Sans+KR:wght@100;900&family=Open+Sans:wght@300&family=Raleway:wght@300;400&family=Roboto:wght@100&family=Space+Mono&family=Tangerine&family=Vidaloka&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/header-footer.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header-footer.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 
     <!-- Script for js code -->
     <script src="./js/index.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- HEADER with navigation -->
     <!-- Meny for desktop -->
     <header>
-        <a href="./index.html"><h3 class="header-title">Ellen Sandqvist <span>&#10086;</span></h3></a>
-        <nav class="main-menu">
-            <ul class="nav-list">
-                <li class="list-style_none"><a class="nav-link selected" href="./index.html">Hem</a></li>
-                <li class="list-style_none"><a class="nav-link" href="./html/cv-template.html">CV</a></li>
-                <li class="list-style_none"><a class="nav-link" href="./html/projects.html">Projekt</a></li> 
-                <li class="list-style_none"><a class="nav-link" href="./html/about.html">Om mig</a></li>
-                <li class="list-style_none"><a class="nav-link" href="./html/contact.html">Kontakt</a></li>
-            </ul>
-        </nav>
+      <a href="./index.html"
+        ><h3 class="header-title">Ellen Sandqvist <span>&#10086;</span></h3></a
+      >
+      <nav class="main-menu">
+        <ul class="nav-list">
+          <li class="list-style_none">
+            <a class="nav-link selected" href="./index.html">Hem</a>
+          </li>
+          <li class="list-style_none">
+            <a class="nav-link" href="./html/cv-template.html">CV</a>
+          </li>
+          <li class="list-style_none">
+            <a class="nav-link" href="./html/projects.html">Projekt</a>
+          </li>
+          <li class="list-style_none">
+            <a class="nav-link" href="./html/about.html">Om mig</a>
+          </li>
+          <li class="list-style_none">
+            <a class="nav-link" href="./html/contact.html">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
 
-    <!--Hamburger menu for mobil -->
-        <div class="mobil-menu">
-            <!-- Linking checkbox and icon -->
-            <input type="checkbox" id="hamburger-input">
-            <label class="hamburger-menu" for="hamburger-input">
-                <i class="hamburger-icon fa-solid fa-bars"></i>
-            </label>
-            <!-- Side menu that will be shown when icon is clicked -->
-            <nav class="sidebar-menu">
-                <!-- a X-icon to close the menu  -->
-                <a class="menu-closer" href="./index.html" aria-label="Stäng menyn"><i class="fa-solid fa-xmark"></i></a>
-                <h3>Meny</h3>
-                <ul>
-                    <li class="list-style_none"><a class="nav-link selected" href="./index.html">Hem</a></li>
-                    <li class="list-style_none"><a class="nav-link" href="./html/cv-template.html">CV</a></li>
-                    <li class="list-style_none"><a class="nav-link" href="./html/projects.html">Projekt</a></li> 
-                    <li class="list-style_none"><a class="nav-link" href="./html/about.html">Om mig</a></li>
-                    <li class="list-style_none"><a class="nav-link" href="./html/contact.html">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
+      <!--Hamburger menu for mobil -->
+      <div class="mobil-menu">
+        <!-- Linking checkbox and icon -->
+        <input type="checkbox" id="hamburger-input" />
+        <label class="hamburger-menu" for="hamburger-input">
+          <i class="hamburger-icon fa-solid fa-bars"></i>
+        </label>
+        <!-- Side menu that will be shown when icon is clicked -->
+        <nav class="sidebar-menu">
+          <!-- a X-icon to close the menu  -->
+          <a class="menu-closer" href="./index.html" aria-label="Stäng menyn"
+            ><i class="fa-solid fa-xmark"></i
+          ></a>
+          <h3>Meny</h3>
+          <ul>
+            <li class="list-style_none">
+              <a class="nav-link selected" href="./index.html">Hem</a>
+            </li>
+            <li class="list-style_none">
+              <a class="nav-link" href="./html/cv-template.html">CV</a>
+            </li>
+            <li class="list-style_none">
+              <a class="nav-link" href="./html/projects.html">Projekt</a>
+            </li>
+            <li class="list-style_none">
+              <a class="nav-link" href="./html/about.html">Om mig</a>
+            </li>
+            <li class="list-style_none">
+              <a class="nav-link" href="./html/contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <!-- SECTION FOR PROFILE PICTURE & TEXT -->
-        <div class="profile-div">
-            <img class="profile-picture" src="./pictures/ellen.png" alt="Black and white photo of Ellen">
-                     
-            <section class="profile-text">
-                <!-- H1 divided with span for different styling -->
-                <h1 class="profile-heading">Student Fullstackutvecklare JavaScript<br><span>Ellen Sandqvist</span></h1> 
+      <!-- SECTION FOR PROFILE PICTURE & TEXT -->
+      <div class="profile-div">
+        <img
+          class="profile-picture"
+          src="./pictures/ellen.png"
+          alt="Black and white photo of Ellen"
+        />
+
+        <section class="profile-text">
+          <!-- H1 divided with span for different styling -->
+          <h1 class="profile-heading">
+            Student Fullstackutvecklare JavaScript<br /><span
+              >Ellen Sandqvist</span
+            >
+          </h1>
+          <p>
+            Ser mig själv som en plikttrogen person med förmågan att balansera
+            kreativitet och struktur. I bagaget finns en magister i
+            kostvetenskap och flerårig erfarenhet av administration och
+            lönerapportering. Jag har en naturlig fallenhet för siffror och
+            gillar problemlösning. Miljö- och samhällsfrågor ligger mig varmt om
+            hjärtat. Läs mer om mina erfarenheter i mitt
+            <a href="html/cv-template.html">CV</a>.
+          </p>
+
+          <!-- Interests -->
+          <h2 class="interests-heading">Har arbetat med:</h2>
+
+          <div class="interests">
+            <figure>
+              <img class="logo" src="./pictures/html5.png" alt="HTML5 logo" />
+              <figcaption>HTML</figcaption>
+            </figure>
+
+            <figure>
+              <img class="logo" src="./pictures/css.png" alt="css logo" />
+              <figcaption>CSS</figcaption>
+            </figure>
+
+            <figure>
+              <img
+                class="logo"
+                src="./pictures/javascript.png"
+                alt="JavaScript logo"
+              />
+              <figcaption>JavaScript</figcaption>
+            </figure>
+
+            <figure>
+              <img
+                class="typescript logo"
+                src="./pictures/typescript.png"
+                alt="TypeScript logo"
+              />
+              <figcaption>TypeScript</figcaption>
+            </figure>
+
+            <figure>
+              <img
+                class="typescript logo"
+                src="./pictures/react.png"
+                alt="React logo"
+              />
+              <figcaption>React</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+
+      <!-- ARTICLE WITH MY PROJECTS -->
+      <article class="projects">
+        <h2>Mina Projekt</h2>
+        <div class="project-div">
+          <!--Project cards divided in two divs for a nicer flex-wrap -->
+          <div class="project-card_row1">
+            <section class="project-card" id="number-guessing-game">
+              <!-- EXTERNAL CODE from CodePel: new div added ".tile_face tile_face-front" for flipping cards (repeated on all project-cards)-->
+              <div class="tile_face tile_face-front">
+                <img
+                  src="./pictures/gissa-talet2.jpg"
+                  alt="Number guessing game"
+                  class="guess-number-img"
+                />
+                <div class="project-text">
+                  <h3><span>&#9672;</span> Gissa Talet <span>&#9672;</span></h3>
+                </div>
+              </div>
+              <!-- EXTERNAL CODE from CodePel: a "backside" of the project-card is added (repeated on all project-cards)-->
+              <div class="tile_face tile_face-back">
+                <h3>Gissa Talet</h3>
                 <p>
-                   Ser mig själv som en plikttrogen person med förmågan att balansera kreativitet och struktur. I bagaget finns en magister i kostvetenskap och flerårig erfarenhet av administration och lönerapportering. Jag har en naturlig fallenhet för siffror och gillar problemlösning. Miljö- och samhällsfrågor ligger mig varmt om hjärtat. Läs mer om mina erfarenheter i mitt <a href="html/cv-template.html">CV</a>.
-                </p> 
-                 
-                <!-- Interests -->
-                <h2 class="interests-heading">Saker som får mig att må bra:</h2>
-                
-                <div class="interests">
-                    <figure>
-                        <i class="fa-solid fa-tree"></i>
-                        <figcaption>Skogen</figcaption>
-                    </figure>
-                        
-                    <figure>
-                        <i class="fa-solid fa-people-roof"></i>
-                        <figcaption>Familj</figcaption> 
-                    </figure>
-
-                    <figure>
-                        <i class="fa-solid fa-seedling"></i>
-                        <figcaption>Trädgård</figcaption> 
-                    </figure>
-                    
-                    <figure>
-                        <i class="fa-solid fa-person-skiing-nordic"></i>
-                        <figcaption>Träning</figcaption> 
-                    </figure>
-
-                    <figure>
-                       <i class="fa-solid fa-utensils"></i>
-                        <figcaption>Mat & Dryck</figcaption>
-                    </figure> 
-                </div>    
+                  Ett spel där taktiskt tänkande och en nypa tur är vägen till
+                  framgång. Använd din skarpa intuition och strategiska
+                  gissningar för att avslöja datorns hemliga nummer. <br />Lycka
+                  till!<br /><a
+                    href="https://secret-number-game.netlify.app/"
+                    target="_blank"
+                    >Testa spelet här</a
+                  >.
+                </p>
+              </div>
             </section>
+
+            <section class="project-card" id="rock-scissors-paper-game">
+              <div class="tile_face tile_face-front">
+                <img
+                  src="./pictures/sten-sax-pase.jpg"
+                  alt="Rock, scissors, paper game"
+                />
+                <div class="project-text">
+                  <h3>
+                    <span>&#9672;</span> Sten, Sax, Påse <span>&#9672;</span>
+                  </h3>
+                </div>
+              </div>
+              <div class="tile_face tile_face-back">
+                <h3>Sten, Sax, Påse</h3>
+                <p>
+                  Klassiska sten, sax, påse i digital form. Utmana datorn och se
+                  om du har vad som krävs för att bli mästare i detta enkla men
+                  beroendeframkallande spel.<br />Må bästa spelare vinna!<br /><a
+                    href="https://rock-scissors-paper-first-to-5.netlify.app/"
+                    target="_blank"
+                    >Testa spelet här</a
+                  >.
+                </p>
+              </div>
+            </section>
+          </div>
+
+          <div class="project-card_row2">
+            <section class="project-card" id="memory-game">
+              <div class="tile_face tile_face-front">
+                <img src="./pictures/memory.jpg" alt="Memory game" />
+                <div class="project-text">
+                  <h3><span>&#9672;</span> Memory <span>&#9672;</span></h3>
+                </div>
+              </div>
+              <div class="tile_face tile_face-back">
+                <h3>Memory</h3>
+                <p>
+                  Spela memory mot den ultimata motståndaren - dig själv! Hitta
+                  paren på så få drag som möjligt och slå ditt personliga
+                  rekord.<br />Låt ditt minne leda dig till framgång!<br /><a
+                    href="https://solo-memory-game.netlify.app/"
+                    target="_blank"
+                    >Testa spelet här</a
+                  >.
+                </p>
+              </div>
+            </section>
+
+            <section class="project-card" id="mathlete-camp-game">
+              <div class="tile_face tile_face-front">
+                <img
+                  src="./pictures/mathletecamp.jpg"
+                  alt="Math game with football field background"
+                />
+                <div class="project-text">
+                  <h3>
+                    <span>&#9672;</span> Mathlete Camp <span>&#9672;</span>
+                  </h3>
+                </div>
+              </div>
+              <div class="tile_face tile_face-back">
+                <h3>Mathlete Camp</h3>
+                <p>
+                  Upptäck magin med matematik genom detta enkela spel. Speciellt
+                  designat för att peppa fotbollsintresserade barn i 5-6 års
+                  åldern att träna matte. Låt oss göra lärandet till en rolig
+                  match! ⚽<br /><a
+                    href="https://mathletecamp.netlify.app/"
+                    target="_blank"
+                    >Testa spelet här</a
+                  >
+                </p>
+              </div>
+            </section>
+          </div>
         </div>
-
-        <!-- ARTICLE WITH MY PROJECTS -->
-        <article class="projects">
-            <h2>Mina Projekt</h2>
-            <div class="project-div">
-                <!--Project cards divided in two divs for a nicer flex-wrap -->
-                <div class="project-card_row1">
-                    
-                    <section class="project-card"  id="number-guessing-game">
-                        <!-- EXTERNAL CODE from CodePel: new div added ".tile_face tile_face-front" for flipping cards (repeated on all project-cards)-->
-                        <div class="tile_face tile_face-front">
-                            <img src="./pictures/gissa-talet2.jpg" alt="Number guessing game" class="guess-number-img">
-                            <div class="project-text"><h3><span>&#9672;</span> Gissa Talet <span>&#9672;</span></h3></div>
-                        </div>
-                        <!-- EXTERNAL CODE from CodePel: a "backside" of the project-card is added (repeated on all project-cards)-->
-                        <div class="tile_face tile_face-back">
-                            <h3>Gissa Talet</h3>
-                            <p>Ett spel där taktiskt tänkande och en nypa tur är vägen till framgång. Använd din skarpa intuition och strategiska gissningar för att avslöja datorns hemliga nummer. <br>Lycka till!<br><a href="https://secret-number-game.netlify.app/" target="_blank">Testa spelet här</a>.</p>
-                        </div>
-                    </section>
-                    
-                    <section class="project-card" id="rock-scissors-paper-game">
-                        <div class="tile_face tile_face-front">
-                            <img src="./pictures/sten-sax-pase.jpg" alt="Rock, scissors, paper game">
-                            <div class="project-text"><h3><span>&#9672;</span> Sten, Sax, Påse <span>&#9672;</span></h3></div>   
-                        </div>
-                        <div class="tile_face tile_face-back">
-                            <h3>Sten, Sax, Påse</h3>
-                            <p>Klassiska sten, sax, påse i digital form. Utmana datorn och se om du har vad som krävs för att bli mästare i detta enkla men beroendeframkallande spel.<br>Må bästa spelare vinna!<br><a href="https://rock-scissors-paper-first-to-5.netlify.app/" target="_blank">Testa spelet här</a>.</p>
-                        </div>
-                    </section>
-                </div>
-
-                <div class="project-card_row2">
-                    <section class="project-card" id="memory-game">
-                        <div class="tile_face tile_face-front">
-                            <img src="./pictures/memory.jpg" alt="Memory game">
-                            <div class="project-text"><h3><span>&#9672;</span> Memory <span>&#9672;</span></h3></div>
-                        </div>
-                        <div class="tile_face tile_face-back">
-                            <h3>Memory</h3>
-                            <p>Spela memory mot den ultimata motståndaren - dig själv! Hitta paren på så få drag som möjligt och slå ditt personliga rekord.<br>Låt ditt minne leda dig till framgång!<br><a href="https://solo-memory-game.netlify.app/" target="_blank">Testa spelet här</a>.</p>
-                        </div>
-                    </section>
-
-                    <section class="project-card" id="mathlete-camp-game">
-                        <div class="tile_face tile_face-front">
-                            <img src="./pictures/mathletecamp.jpg" alt="Math game with football field background">
-                            <div class="project-text"><h3><span>&#9672;</span> Mathlete Camp <span>&#9672;</span></h3></div>
-                        </div>
-                        <div class="tile_face tile_face-back">
-                            <h3>Mathlete Camp</h3>
-                            <p>Upptäck magin med matematik genom detta enkela spel. Speciellt designat för att peppa fotbollsintresserade barn i 5-6 års åldern att träna matte. Låt oss göra lärandet till en rolig match! ⚽<br><a href="https://mathletecamp.netlify.app/" target="_blank">Testa spelet här</a></p>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </article>   
+      </article>
     </main>
 
     <!-- FOOTER with email and link to LinkedIn & GitHub -->
     <footer>
-        <a class="mailto" href="mailto:ellensandqvist@chasacademy.se"><p>ellen.sandqvist@chasacademy.se</p></a>
-        <div class="footer-links">
-            <a href="https://www.linkedin.com/in/ellen-sandqvist-32898b174/" target="_blank" aria-label="Länk till min LinkedIn-sida"><i class="fa fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
-            <a href="https://github.com/EllenSandqvist" target="_blank" aria-label="Länk till min GitHub-sida"><i class="fa-brands fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a>
-        </div>
+      <a class="mailto" href="mailto:ellensandqvist@chasacademy.se"
+        ><p>ellen.sandqvist@chasacademy.se</p></a
+      >
+      <div class="footer-links">
+        <a
+          href="https://www.linkedin.com/in/ellen-sandqvist-32898b174/"
+          target="_blank"
+          aria-label="Länk till min LinkedIn-sida"
+          ><i class="fa fa-linkedin" aria-hidden="true"></i
+          ><span class="sr-only">LinkedIn</span></a
+        >
+        <a
+          href="https://github.com/EllenSandqvist"
+          target="_blank"
+          aria-label="Länk till min GitHub-sida"
+          ><i class="fa-brands fa-github" aria-hidden="true"></i
+          ><span class="sr-only">GitHub</span></a
+        >
+      </div>
     </footer>
     <!-- Script for icons -->
-    <script src="https://kit.fontawesome.com/dfb17be9bd.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/dfb17be9bd.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
