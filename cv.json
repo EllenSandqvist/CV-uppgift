@@ -1,58 +1,58 @@
 {
-    "Utbildning": [
+  "Utbildning": [
+    {
+      "rubrik": "Fullstack JavaScript, 2023 - pågående",
+      "skola": "Chas Academy, Umeå",
+      "beskrivning": "JavaScript i backend- och frontendutveckling. Tekniska ramverk och arbetsmetoder såsom versionshantering, REACT, Vue, CI/CD och cloud-lösningar. Projektmetodik och agila metoder."
+    },
+    {
+      "rubrik": "Fil.mag. i Kostvetenskap, 2007-2012",
+      "skola": "Umeå Universitet, Umeå",
+      "beskrivning": [
         {
-            "rubrik": "Fullstack JavaScript, 2023 - pågående",
-            "skola": "Chas Academy, Umeå",
-            "beskrivning": "JavaScript i backend- och frontendutveckling. Tekniska ramverk och arbetsmetoder såsom versionshantering, REACT, CI/CD och hostinglösningar. Projektmetodik och agila metoder."
+          "Breddningsämnen": "'Företagsekonomi och projektledning', 'Organisation och ledarskap' "
         },
         {
-            "rubrik": "Fil.mag. i Kostvetenskap, 2007-2012",
-            "skola": "Umeå Universitet, Umeå",
-            "beskrivning":  [
-                {
-                    "Breddningsämnen": "'Företagsekonomi och projektledning', 'Organisation och ledarskap' "   
-                },
-                {
-                    "Utrikesstudier": "'Safe and Healhty Food'. 9-20 nov. 2009, Haute Ecole Lucia de Brouckère, Bryssel"  
-                }
-            ]
-        },
-        {
-            "rubrik": "Naturvetenskapsprogr. teknisk, 1999-2002",
-            "skola": "Liljaskolan, Vännäs",
-            "beskrivning": "3-årigt naturvetenskapligt program med teknisk inriktning"
+          "Utrikesstudier": "'Safe and Healhty Food'. 9-20 nov. 2009, Haute Ecole Lucia de Brouckère, Bryssel"
         }
-    ],
-    "Arbetslivserfarenhet": [
-        {
-            "titel": "Verksamhetsstöd, 2019 - pågående",
-            "företag": "PostNord AB, Umeå",
-            "arbetsuppgifter": "Hantering av masterdata, koppling av eftersändningar, in- och utflyttningar, koordinatsättning av nya adresser m.m."
-        },
-        {
-            "titel": "Lönerapportör, 2014 - 2018",
-            "företag": "PostNord AB, Umeå",
-            "arbetsuppgifter": "Lönerapportering i Heroma, registrera reseräkningar, skriva personalbeslut, ta fram rapporter."
-        },
-        {
-            "titel": "Terminalarbetare, 2003-2014",
-            "företag": "Posten Meddelande AB, Umeå",
-            "arbetsuppgifter": "Sortering av post och paket, videokodning av adress-uppgifter, drift och lättare underhåll av sorteringsmaskiner."
-        }
-    ],
-    "Språk": [
-        {
-            "språk": "Svenska",
-            "kunskapsnivå": 5
-        },
-        {
-            "språk": "Engelska",
-            "kunskapsnivå": 4
-        },
-        {
-            "språk": "Spanska",
-            "kunskapsnivå": 1
-        }
-    ],
-    "Styrkor": ["Pålitlig", "Punktlig", "Strukturerad", "Muntlig presentation"]
+      ]
+    },
+    {
+      "rubrik": "Naturvetenskapsprogr. teknisk, 1999-2002",
+      "skola": "Liljaskolan, Vännäs",
+      "beskrivning": "3-årigt naturvetenskapligt program med teknisk inriktning"
+    }
+  ],
+  "Arbetslivserfarenhet": [
+    {
+      "titel": "Verksamhetsstöd, 2019 - pågående",
+      "företag": "PostNord AB, Umeå",
+      "arbetsuppgifter": "Hantering av masterdata, koppling av eftersändningar, in- och utflyttningar, koordinatsättning av nya adresser m.m."
+    },
+    {
+      "titel": "Lönerapportör, 2014 - 2018",
+      "företag": "PostNord AB, Umeå",
+      "arbetsuppgifter": "Lönerapportering i Heroma, registrera reseräkningar, skriva personalbeslut, ta fram rapporter."
+    },
+    {
+      "titel": "Terminalarbetare, 2003-2014",
+      "företag": "Posten Meddelande AB, Umeå",
+      "arbetsuppgifter": "Sortering av post och paket, videokodning av adress-uppgifter, drift och lättare underhåll av sorteringsmaskiner."
+    }
+  ],
+  "Språk": [
+    {
+      "språk": "Svenska",
+      "kunskapsnivå": 5
+    },
+    {
+      "språk": "Engelska",
+      "kunskapsnivå": 4
+    },
+    {
+      "språk": "Spanska",
+      "kunskapsnivå": 1
+    }
+  ],
+  "Styrkor": ["Pålitlig", "Punktlig", "Strukturerad", "Muntlig presentation"]
 }
